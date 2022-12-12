@@ -17,12 +17,12 @@ public class Main {
         int finalAccumulation = 2_459_000;
         int monthlyAccumulation = 15_000;
         int total = 0;
-        int MonthCounter = 1;
+        int monthCounter = 1;
 
         while (total <= finalAccumulation) {
             total = total + monthlyAccumulation;
-            System.out.println("Месяц " + MonthCounter + ", сумма накоплений равна " + total + " рублей");
-            MonthCounter++;
+            System.out.println("Месяц " + monthCounter + ", сумма накоплений равна " + total + " рублей");
+            monthCounter++;
         }
 
         System.out.println();
@@ -75,12 +75,12 @@ public class Main {
         int totalAmount = 12_000_000;
         int depositAmount = 15000;
         double monthlyPercent = 0.07;
-        int MonthCounter = 1;
+        int monthCounter = 1;
 
         while (depositAmount <= totalAmount) {
             depositAmount += depositAmount * monthlyPercent;
-            System.out.println("Месяц " + MonthCounter + ", сумма накоплений равна " + depositAmount + " рублей");
-            MonthCounter++;
+            System.out.println("Месяц " + monthCounter + ", сумма накоплений равна " + depositAmount + " рублей");
+            monthCounter++;
         }
 
         System.out.println();
@@ -94,16 +94,16 @@ public class Main {
         int totalAmount = 12_000_000;
         int depositAmount = 15000;
         double monthlyPercent = 0.07;
-        int MonthCounter = 1;
+        int monthCounter = 1;
 
         while (depositAmount <= totalAmount) {
             depositAmount += depositAmount * monthlyPercent;
 
-            if (MonthCounter % 6 == 0) {
-                System.out.println("Месяц " + MonthCounter + ", сумма накоплений равна " + depositAmount + " рублей");
+            if (monthCounter % 6 == 0) {
+                System.out.println("Месяц " + monthCounter + ", сумма накоплений равна " + depositAmount + " рублей");
             }
 
-            MonthCounter++;
+            monthCounter++;
         }
 
         System.out.println();
@@ -117,16 +117,16 @@ public class Main {
         int numberOfMonths = 9 * 12;
         int depositAmount = 15000;
         double monthlyPercent = 0.07;
-        int MonthCounter = 1;
+        int monthCounter = 1;
 
-        while (MonthCounter <= numberOfMonths) {
+        while (monthCounter <= numberOfMonths) {
             depositAmount += depositAmount * monthlyPercent;
 
-            if (MonthCounter % 6 == 0) {
-                System.out.println("Месяц " + MonthCounter + ", сумма накоплений равна " + depositAmount + " рублей");
+            if (monthCounter % 6 == 0) {
+                System.out.println("Месяц " + monthCounter + ", сумма накоплений равна " + depositAmount + " рублей");
             }
 
-            MonthCounter++;
+            monthCounter++;
         }
 
         System.out.println();
